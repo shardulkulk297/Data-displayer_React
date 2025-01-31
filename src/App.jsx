@@ -1,6 +1,8 @@
 
-import { PieChart, Pie, Legend, Tooltip, ResponsiveContainer } from 'recharts';
-
+import { PieChart, Pie, Legend, Tooltip, ResponsiveContainer, } from 'recharts';
+import B from './B';
+import Doughnut from './DoughnutC';
+import LineChart from './LineChart';
 
 function App() {
   
@@ -13,7 +15,7 @@ function App() {
 
   return (
     <>
-       <h1>Social Media Users Chart</h1>
+       <h1>Chart display</h1>
         <PieChart width={400} height={400}>
           <Pie
             dataKey="value"
@@ -28,6 +30,11 @@ function App() {
           
           <Tooltip />
         </PieChart>
+
+        
+        <B />
+        <Doughnut/>
+        <LineChart />
    
     </>
   )
